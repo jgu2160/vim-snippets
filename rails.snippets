@@ -901,7 +901,11 @@ it 'routes to #${1:action}' do
 end
 endsnippet
 
-snippet x "Expectation snippet"
+snippet x "Positive expectation"
 expect(${1:model}).to ${2:test_method}(${3:value})
+endsnippet
+
+snippet xn "Negative expectation"
+expect(${1:model}).not_to ${2:test_method}(${3:value})
 endsnippet
 # vim:ft=snippets:
